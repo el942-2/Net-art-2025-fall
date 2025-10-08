@@ -1,0 +1,108 @@
+/* === Basic Layout === */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0f;
+  background-image: linear-gradient(135deg, #0a0a0f 40%, #1a1a25 100%);
+  color: #e0e0f5;
+  font-family: 'Courier New', monospace;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 300;
+  min-width: 2000px;
+  min-height: 2000px;
+  overflow: auto;
+}
+
+/* === Intro Section === */
+#intro {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  width: 400px;
+  padding: 30px;
+  border: 2px solid silver;
+  background-color: rgba(255, 255, 255, 0.05);
+  text-align: left;
+  box-shadow: 0px 0px 30px rgba(192, 192, 255, 0.2);
+  opacity: 0.9;
+}
+
+/* === Titles & Text === */
+h1 {
+  color: #d0d0ff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* === Span Classes === */
+.whisper {
+  color: #aaa;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.highlight {
+  color: #9fe0ff;
+  text-decoration: overline;
+  font-weight: bold;
+}
+
+/* === Image Section === */
+#portal {
+  position: absolute;
+  top: 1200px;
+  left: 800px;
+  border: 3px solid #9fe0ff;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+#portal img {
+  width: 400px;
+  height: 250px;
+  opacity: 0.85;
+}
+
+/* === Secret Messages === */
+.secret {
+  position: absolute;
+  width: 300px;
+  padding: 20px;
+  background-color: rgba(100, 100, 120, 0.1);
+  border: 1px dashed #ccc;
+  color: #b0c0ff;
+  font-style: italic;
+}
+
+#message1 {
+  top: 500px;
+  left: 1600px;
+}
+
+#message2 {
+  top: 1600px;
+  left: 300px;
+}
+
+#message3 {
+  top: 1800px;
+  left: 1800px;
+}
+
+/* === Footer === */
+#credits {
+  position: absolute;
+  top: 1950px;
+  left: 100px;
+  width: 500px;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
