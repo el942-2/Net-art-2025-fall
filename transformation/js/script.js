@@ -9,7 +9,7 @@ document.body.addEventListener("click", () => {
     // Change text
     const title = document.getElementById("title");
     title.textContent = transformed 
-        ? "CHAOS MODE ACTIVATED" 
+        ? "🕺🕺🕺🕺🕺" 
         : "Click to transform";
 
     // Add floating shapes only when in chaos mode
