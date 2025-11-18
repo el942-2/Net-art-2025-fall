@@ -1,17 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C H A N G E</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+/* INITIAL CALM MODE */
+body {
+    margin: 0;
+    background: #dfe9f3;   /* soft calm blue */
+    font-family: Arial, sans-serif;
+    transition: background 1s;
+}
 
-    <div id="container">
-        <h1 id="title">Click to transform.</h1>
-    </div>
+#container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+}
 
-    <script src="js/script.js"></script>
-</body>
-</html>
+h1 {
+    font-size: 2.2rem;
+    color: #333;
+    transition: color 1s;
+}
+
+/* CHAOTIC MODE (activated by JS adding .chaos) */
+body.chaos {
+    background: radial-gradient(circle, #ff0044, #ff8800, #ffee00);
+}
+
+body.chaos #container {
+    transform: rotate(5deg);
+}
+
+body.chaos h1 {
+    color: white;
+    text-shadow: 3px 3px 10px black;
+}
+
+/* Chaotic floating circles created by JS */
+.circle {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.7;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-40px); }
+    100% { transform: translateY(0); }
+}
